@@ -1,0 +1,94 @@
+.FavoriteProfilePageContainer {
+  border: 1px solid #5d68f8;
+  max-width: 60vw;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.FavoriteProfilePageContainer .pageName {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.FavoriteProfilePageContainer .pageName h1 {
+  text-align: center;
+  border-bottom: 2px solid #5d68f8;
+  color: #5d68f8;
+}
+.FavoriteProfilePageContainer .fp-items {
+  display: grid;
+  align-items: center;
+  gap: 20px;
+  grid-template-columns: 0.4fr 5fr 0.2fr;
+  grid-template-rows: 1fr;
+  background-color: #e5e5eb;
+  padding: 10px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+}
+.dark-mode .FavoriteProfilePageContainer .fp-items {
+  background-color: #bbb;
+}
+.FavoriteProfilePageContainer .fp-items:hover {
+  background-color: #ebebfb;
+}
+.dark-mode .FavoriteProfilePageContainer .fp-items:hover {
+  background-color: #aaa;
+}
+
+.FavoriteProfilePageContainer .fp-items .fp-ProfilePic {
+  border: 3px solid #8c94f7;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  user-select: none;
+}
+.dark-mode .FavoriteProfilePageContainer .fp-items .fp-ProfilePic {
+  border: 3px solid white;
+}
+.FavoriteProfilePageContainer .fp-items .fp-ProfilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.FavoriteProfilePageContainer .fp-items .fp-Container {
+  overflow: hidden;
+  height: auto;
+  word-wrap: break-word;
+  text-align: justify;
+}
+.dark-mode .FavoriteProfilePageContainer .fp-items .fp-Container {
+  color: black;
+}
+.FavoriteProfilePageContainer .fp-items .fp-Container .fp-Name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.FavoriteProfilePageContainer .fp-items .fp-Container .fp-CurrentPosition {
+  font-size: 17px;
+  font-weight: 500;
+}
+.FavoriteProfilePageContainer .fp-items .fp-Container .fp-CurrentInstitute {
+  font-size: 15px;
+}
+.FavoriteProfilePageContainer .fp-items #delete-fp {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 1rem;
+  margin: auto;
+}
+.FavoriteProfilePageContainer .fp-items #delete-fp .svg-inline--fa {
+  height: 0.8rem;
+}
+.FavoriteProfilePageContainer .fp-items #delete-fp .svg-inline--fa:hover {
+  color: red;
+}

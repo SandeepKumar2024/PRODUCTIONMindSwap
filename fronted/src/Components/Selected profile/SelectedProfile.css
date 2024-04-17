@@ -1,0 +1,265 @@
+#sp-container {
+    max-width: 70%;
+    /* border: 2px solid gainsboro; */
+    height: 115vh;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#sp-container .sp-banner {
+    width: 100%;
+    display: block;
+    height: 35%;
+    position: relative;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    border: 2px solid gainsboro;
+    border-bottom: none;
+}
+
+#sp-container .sp-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+}
+
+#sp-container .sp-box {
+    display: flex;
+    gap: 1%;
+    /* border: 2px solid aqua; */
+    height: 67%;
+    position: relative;
+    top: -35px;
+    border: 2px solid gainsboro;
+    border-radius: 12px;
+    border-top: none;
+
+}
+
+#sp-container .sp-left {
+    width: 29.5%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.dark-mode #sp-container .sp-left {
+    background-color: #333;
+}
+
+#sp-container .sp-left .sp-left-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 3.2rem 0;
+    border-bottom: 2px solid gray;
+    /* border: 1px solid red;8*/
+}
+
+#sp-container .sp-left .sp-left-top .sp-profile {
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    position: relative;
+
+}
+
+#sp-container .sp-left .sp-left-top .sp-profile .sp-status-dot {
+    background-color: lime;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+
+}
+#sp-container .sp-left .sp-left-top .sp-profile .sp-status-dot-off {
+    background-color: gray;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    bottom: 8%;
+
+}
+
+#sp-container .sp-left .sp-left-top .sp-profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7574ff;
+    background-color: white;
+}
+
+#sp-container .sp-left .sp-left-bottom {
+    padding: 1rem;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-memberSince,
+#sp-container .sp-left .sp-left-bottom .sp-followers {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-social-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 23px 10px;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-social-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-social-links a img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.dark-mode #sp-container .sp-left .sp-left-bottom .sp-social-links a #githubIcon {
+    filter: invert(1);
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-social-links a h2 {
+    font-size: 7pt;
+    color: black;
+}
+
+.dark-mode #sp-container .sp-left .sp-left-bottom .sp-social-links a h2 {
+    color: #ddd;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-to-favorite-and-share {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 95%;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-to-favorite-and-share button {
+    cursor: pointer;
+    border: none;
+    background-color: #7574ff;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 10px;
+    width: 80%;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-to-favorite-and-share button:hover {
+    background-color: #8b8bff;
+}
+
+#sp-container .sp-left .sp-left-bottom .sp-to-favorite-and-share .sp-share {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#sp-container .sp-left .sp-left-bottom .sp-to-favorite-and-share .sp-share h6 {
+    color: gray;
+}
+.dark-mode #sp-container .sp-left .sp-left-bottom .sp-to-favorite-and-share .sp-share h6 {
+    color: white;
+}
+
+
+
+#sp-container .sp-right {
+    display: flex;
+    width: 69.5%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+    flex-direction: column;
+    gap: 2%;
+
+
+}
+
+#sp-container .sp-right .sp-headline,
+#sp-container .sp-right .sp-detail-box {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.dark-mode #sp-container .sp-right .sp-headline {
+    background-color: #333;
+}
+
+.dark-mode #sp-container .sp-right .sp-detail-box {
+    background-color: #333;
+}
+
+#sp-container .sp-right .sp-headline h4 {
+    padding: 10px;
+    font-weight: 650;
+
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details {
+    padding: 10px;
+
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details .sp-detail-feild {
+    display: grid;
+    grid-template-columns: 1.2fr 3fr;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details .sp-detail-feild .key {
+    border-right: 3px dotted #7574ff;
+    font-weight: 650;
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details .sp-detail-feild .value {
+    font-weight: 650;
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details .b10s {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details .b10s button {
+    cursor: pointer;
+    border: none;
+    background-color: #7574ff;
+    border-radius: 10px;
+    /* font-size: 20px; */
+    font-weight: bold;
+    padding: 10px;
+    width: 19%;
+    color: white;
+}
+
+#sp-container .sp-right .sp-detail-box .sp-details .b10s button:hover {
+    background-color: #8b8bff;
+}

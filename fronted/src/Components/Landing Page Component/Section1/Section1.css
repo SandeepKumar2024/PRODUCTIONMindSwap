@@ -1,0 +1,161 @@
+#first {
+  background-image: linear-gradient(to right, #172ad6, #707ce9);
+}
+#first #logo {
+padding-top: 2rem;
+width: fit-content;
+height: fit-content;
+}
+#first #logo img {
+  width: 20rem;
+}
+#first #first-box .first-item {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 2.5fr 1fr;
+  margin-top: 5rem;
+}
+#first #first-box .first-item .text {
+  padding: 1rem 4rem;
+}
+#first #first-box .first-item .text .sh-1 {
+  color: white;
+  font-size: 2rem;
+}
+#first #first-box .first-item .text .sh-1 span {
+  font-style: italic;
+}
+
+#first #first-box .first-item .text .sp-1 {
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 0rem 1.5rem 0rem;
+  line-height: 27px;
+}
+
+#first #first-box .first-item .text .buttons {
+  max-width: fit-content;
+}
+#first #first-box .first-item .text .buttons .login {
+  font-size: 1.5rem;
+  padding: 10px 34px;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  margin: 0rem 3rem 0rem 0rem;
+  color: #3e4eda;
+  border: 2px solid white;
+  background-color: white;
+  box-shadow: 0px 0px 15px white;
+  cursor: pointer;
+}
+
+#first #first-box .first-item .text .buttons .join {
+  font-size: 1.2rem;
+  padding: 9px 30px;
+  border-radius: 2.5rem;
+  font-weight: bold;
+  color: #7784f8;
+  background-color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#first #first-box .first-item .first-image img {
+  height: 23rem;
+  position: relative;
+  top: -8rem;
+  padding-right: 4rem;
+}
+
+/* ---- Extra Small Device ------ */
+@media only screen and (max-width: 768px) {
+  #first #logo h1 {
+    font-size: 2rem;
+    padding-top: 3rem;
+  }
+  #first #first-box .first-item {
+    grid-template-columns: 2fr 1fr;
+    margin-top: 2rem;
+  }
+  #first #first-box .first-item .text {
+    padding: 0;
+    padding-left: 4rem;
+  }
+  #first #first-box .first-item .text .sh-1 {
+    font-size: 1.5rem;
+  }
+
+  #first #first-box .first-item .text .sp-1 {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+
+  #first #first-box .first-item .text .buttons {
+    max-width: fit-content;
+  }
+  #first #first-box .first-item .text .buttons .login {
+    font-size: 1rem;
+    padding: 8px 20px;
+    margin: 0rem 2rem 0rem 0rem;
+  }
+
+  #first #first-box .first-item .text .buttons .join {
+    font-size: 0.8rem;
+    padding: 6px 19px;
+  }
+
+  #first #first-box .first-item .first-image img {
+    height: 15rem;
+    position: relative;
+    top: -2rem;
+    padding-right: 3rem;
+  }
+}
+
+/* ---- Medium Device ------ */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #first #logo h1 {
+    font-size: 2.5rem;
+    padding-top: 3rem;
+  }
+  #first #first-box .first-item {
+    grid-template-columns: 2fr 1fr;
+    margin-top: 3rem;
+  }
+  #first #first-box .first-item .text {
+    padding: 0;
+    padding-left: 4rem;
+  }
+  #first #first-box .first-item .text .sh-1 {
+    font-size: 1.8rem;
+  }
+
+  #first #first-box .first-item .text .sp-1 {
+    font-size: 1rem;
+    line-height: 24px;
+  }
+
+  #first #first-box .first-item .text .buttons {
+    max-width: fit-content;
+  }
+  #first #first-box .first-item .text .buttons .login {
+    font-size: 1rem;
+    padding: 8px 20px;
+    margin: 0rem 2rem 0rem 0rem;
+  }
+
+  #first #first-box .first-item .text .buttons .join {
+    font-size: 0.8rem;
+    padding: 6px 19px;
+  }
+
+  #first #first-box .first-item .first-image img {
+    height: 17rem;
+    position: relative;
+    top: -4rem;
+  }
+}
+
+/* ---- Large Device ------ */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}

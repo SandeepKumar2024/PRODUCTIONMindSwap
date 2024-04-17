@@ -1,0 +1,177 @@
+.ChatBox-container {
+    background: white;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 0.7fr 6fr 1fr;
+    overflow-y: auto;
+    height: 396px;
+}
+
+.chat-header {
+    padding-left: 1rem;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 1rem;
+    border-bottom: 2px solid gray;
+}
+
+.chat-header .follower {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-header .follower .pp {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+}
+
+.chat-header .follower .pp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7574ff;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.chat-header .follower .pp-name {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+}
+
+.chat-header .follower .pp-name .status {
+    font-size: 10px;
+}
+
+.chat-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Style the scrollbar */
+.chat-body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.chat-body::-webkit-scrollbar-track {
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.chat-body::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 1rem;
+}
+
+.chat-body::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 255);
+
+}
+
+.message {
+    padding: 0.7rem;
+    border-radius: 1rem 1rem 1rem 0;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 2px solid black;
+    font-size: 10pt;
+    font-weight: 500;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+.message>span:nth-child(2) {
+    font-size: 6pt;
+    align-self: end;
+}
+
+.own {
+    width: 45%;
+    align-self: flex-end;
+    border-radius: 1rem 1rem 0 1rem;
+    background: #4747d8;
+    border: none;
+    font-size: 10pt;
+    color: white;
+    align-self: end;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+
+
+.chat-sender {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.chat-sender>input {
+    height: 70%;
+    background-color: rgb(236, 236, 236);
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    padding: 0px 15px 0px 15px;
+}
+
+
+.react-input-emoji--container{
+    color: white !important;
+    background-color: #000 !important;
+}
+.react-emoji-picker--wrapper{
+    top: -20rem !important;
+    height: 310px !important;
+}
+.chat-sender .upload {
+    background: black;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+}
+
+.chat-sender>div {
+    height: 70%;
+    padding: 0px 9px 0px 9px;
+}
+
+.chat-sender .react-input-emoji--button svg {
+    fill: #111;
+}
+
+.chat-sender .send-button {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chat-sender .svg-inline--fa {
+    color: #111;
+}

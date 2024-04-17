@@ -1,0 +1,27 @@
+/* --------- Styling the Scroll-bar of the website---------- */
+/* Hide the default scrollbar */
+body::-webkit-scrollbar {
+    width: 4px;
+}
+ 
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 1rem;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #6770f7;
+}
+
+/* --------- Styling the Scroll-bar of the website---------- */
+.dark-mode{
+    background-color: #222;
+    color: #eee;
+}

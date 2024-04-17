@@ -1,0 +1,133 @@
+.notification-popup #notificationIndicationArrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #8c94f7;
+  position: absolute;
+  top: -0.5rem;
+  left: 9.5rem;
+  z-index: -1;
+}
+.dark-mode .notification-popup #notificationIndicationArrow {
+  border-bottom: 10px solid #fff;
+  
+}
+.notification-popup {
+  background: #e3e6ff;
+  position: absolute;
+  top: -4.5rem;
+  left: 69.5rem;
+  opacity: 0;
+  scale: 0;
+  width: 22.5rem;
+  min-height: 6rem;
+  z-index: 4;
+  border-radius: 8px;
+}
+.dark-mode .notification-popup{
+  background-color: white;
+  border: 1px solid black;
+}
+.show-notification-popup {
+  top: 4.5rem;
+  opacity: 1;
+  scale: 1;
+}
+.notification-popup h1 {
+  font-size: 1rem;
+  background-color: #8c94f7;
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.dark-mode .notification-popup h1{
+  background-color: white;
+  color: black;
+}
+.notification-dropdown-items {
+  display: grid;
+  grid-template-columns: 0.2fr 2fr 0.1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: 10px;
+  background-color: #e5e5eb;
+  padding: 10px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.dark-mode .notification-dropdown-items{
+  background-color: #bbb;
+}
+.notification-dropdown-items:hover {
+  background-color: #ebebfb;
+}
+.dark-mode .notification-dropdown-items:hover {
+  background-color: #aaa;
+}
+.notification-dropdown-items .sourceProfile {
+  border: 3px solid #8c94f7;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: relative;
+  
+}
+.dark-mode .notification-dropdown-items .sourceProfile{
+  border: 3px solid white;
+}
+.notification-dropdown-items .sourceProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.dark-mode .notification-dropdown-items .contentContainer {
+  color: black;
+}
+.notification-dropdown-items .contentContainer .content {
+  text-align: justify;
+}
+.notification-dropdown-items .contentContainer .content .name {
+  font-weight: 500;
+}
+.notification-dropdown-items .contentContainer #notificationTime .time {
+  font-size: 0.7rem;
+}
+.notification-dropdown-items #deleteNotification {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 1rem;
+}
+.notification-dropdown-items #deleteNotification .svg-inline--fa {
+
+  height: 0.8rem;
+}
+.notification-dropdown-items #deleteNotification .svg-inline--fa:hover {
+  color: red;
+}
+#viewAllNotifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#viewAllNotifications a {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  color: #8c94f7;
+}
+.dark-mode #viewAllNotifications a{
+  color: #111;
+
+}
+#viewAllNotifications a:hover {
+  text-decoration: underline;
+  color: blue;
+}

@@ -1,0 +1,43 @@
+#feature-container {
+  display: grid;
+  height: 100%;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: 1fr 3fr;
+}
+#feature-container .time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+}
+#feature-container .feature-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 0 20rem;
+}
+#feature-container .feature-icons .icon-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#feature-container .feature-icons .icon {
+  display: flex;
+  background-color: #e3ddd5;
+  width: 2.8rem;
+  border-radius: 50%;
+  height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#end {
+  color: red;
+  rotate: 135deg;
+}

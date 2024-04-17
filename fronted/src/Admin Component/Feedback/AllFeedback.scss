@@ -1,0 +1,101 @@
+#AF-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 10px;
+    height: 99vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 0; // This will hide the scrollbar
+    }
+
+    .AF-card {
+        user-select: none;
+        width: 16rem;
+        height: 21rem;
+        display: flex;
+        cursor: pointer;
+        padding: 1.2rem 0.3rem 0.4rem 0.5rem;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        border-radius: 30px;
+        background-color: rgb(227, 242, 255);
+        position: relative;
+
+        .selectedDiv {
+
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 89%;
+            height: fit-content;
+            display: flex;
+            justify-content: space-between;
+
+
+            #selected {
+                color: green;
+            }
+        }
+
+        .AF-img {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            border: 1px solid #c2bdbd;
+            user-select: none;
+
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                border-radius: 50%;
+                user-select: none;
+            }
+
+        }
+
+        .AF-name {
+            h2 {
+                padding: 0.5rem;
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+        }
+
+        .AF-currentPosition {
+            h3 {
+                color: black;
+                font-size: 1rem;
+                border-bottom: 2px solid #7880da;
+                width: 10rem;
+                text-align: center;
+                padding-bottom: 0.5rem;
+            }
+        }
+
+        .AF-headline {
+            // border: 1px solid red;
+            width: 100%;
+            height: 100%;
+            border-radius: 18px;
+            padding: 0.5rem;
+            overflow-x: hidden;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                width: 0; // This will hide the scrollbar
+            }
+
+            p {
+                text-align: justify;
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+}

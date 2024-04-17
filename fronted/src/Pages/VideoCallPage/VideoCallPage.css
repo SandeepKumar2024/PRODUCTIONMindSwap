@@ -1,0 +1,119 @@
+#Call-BTN {
+  background-color: white;
+  z-index: 20;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dark-mode #Call-BTN {
+ color: black;
+}
+
+#Call-BTN button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, rgb(194, 194, 233), aqua);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+#Call-BTN button:hover{
+  scale: 1.01;
+}
+#v-container {
+  user-select: none;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#v-top {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  height: 92%;
+}
+
+#v-top-left {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  height: 7%;
+  color: #5d68f8;
+}
+
+/* For video call */
+#user-container {
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 92%;
+}
+
+#user-container .user1,
+#user-container .user2 {
+  box-shadow: 0px 0px 6px 2px #c2bebe;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#user-container .user1 img,
+#user-container .user2 img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+#user-container .user1 video,
+#user-container .user2 video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  /* border: 2px solid gray; */
+}
+
+#user-container .user1 h5,
+#user-container .user2 h5 {
+
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+/* For video call */
+#v-top-right {
+  height: 100%;
+  box-shadow: 0px 0px 20px 10px floralwhite;
+
+}
+
+#v-bottom {
+  height: 8%;
+}

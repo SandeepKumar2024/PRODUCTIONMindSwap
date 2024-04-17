@@ -1,0 +1,250 @@
+header {
+  display: grid;
+  grid-template-columns: 0.5fr 3fr 1.2fr;
+  grid-template-rows: 1fr;
+  padding: 1.2rem 4rem;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+header #header-left {
+  height: 3rem;
+}
+
+header #header-left  a {
+  display: block;
+  height: inherit;
+
+}
+header #header-left a img {
+  width: 12rem;
+  height: inherit;
+  object-fit: cover;
+
+}
+
+header #header-middle {
+width: fit-content;
+}
+header #header-middle form{
+  height: 2.54rem;
+  display: flex;
+  width: fit-content;
+}
+
+header #header-middle form #search-box-input {
+  min-width: 49vw;
+  padding: 1rem;
+  border: 1px solid #b0b1b8;
+  outline: none;
+  border-right: none;
+  font-size: 1rem;
+}
+
+header #header-middle form #search-box-input::placeholder {
+  color: #929292;
+}
+
+header #header-middle form button {
+  user-select: none;
+  top: 3.3%;
+  right: 30%;
+  width: 3rem;
+  background-color: #6770f7;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header #header-middle form button img {
+  width: 1rem;
+  filter: invert(100);
+}
+
+header #header-right ul {
+  display: flex;
+  /* grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr; */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  height: inherit;
+}
+
+header #header-right ul li {
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  border-radius: 50%;
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  /* border: 1px solid red; */
+}
+
+/* Indicator Designing Starts*/
+.indicator {
+  background-color: red;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: absolute;
+  /* left: 79.5rem; */
+  top: 3.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  /* visibility: hidden; */
+}
+
+#notification-indicator {
+  right: 16%;
+}
+
+#notification-indicator h1,
+#requestIndicator h1,
+#messageIndicator h1 {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+#requestIndicator {
+  right: 11.5%;
+}
+
+#messageIndicator {
+  right: 24.5%;
+}
+
+/* Indicator Designing Ends*/
+
+header #header-right ul li h6 {
+  color: #5d5858;
+}
+
+.dark-mode header #header-right ul li h6 {
+  color: #fff;
+}
+
+header #header-right ul #profile {
+  width: 2.2rem;
+  height: 2.2rem;
+  display: block;
+  position: relative;
+}
+
+header #header-right ul #profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #7574ff;
+  background-color: white;
+}
+
+header #header-right ul #profile #self-onlineDot {
+  background: rgb(2, 249, 2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  position: absolute;
+  right: 3%;
+  bottom: 2%;
+  z-index: 5;
+}
+
+/* Design for SVG Icon starts */
+.svg-inline--fa {
+  height: 1.3rem;
+  color: #5d5858;
+}
+
+.dark-mode .svg-inline--fa {
+  color: #fff;
+}
+
+header #header-right ul #dark-mode-btn .svg-inline--fa {
+  height: 0.9rem;
+}
+
+/* Design for SVG Icon ends */
+
+/* design for dark mode toggle button starts */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 42px;
+  height: 21px;
+  border-radius: 60px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark-mode .checkbox-label {
+  background-color: white;
+}
+
+/* ----Icon css starts--- */
+header #header-right ul #dark-mode-btn .fa-moon {
+  color: black;
+}
+
+.fa-sun {
+  color: #ff9c00;
+}
+
+/* ----Icon css ends--- */
+.checkbox-label .ball {
+  background-color: #5d68f8;
+  width: 1.2rem;
+  height: 1.18rem;
+  position: absolute;
+  left: 3px;
+  top: 1px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.dark-mode .ball {
+  transform: translateX(100%);
+}
+
+/* design for dark mode toggle button ends */
+header #header-right ul #profile {
+  background-color: #8c94f7;
+  color: white;
+}
+
+header #header-right ul #profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header #header-right ul #profile h1 {
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: white;
+  user-select: none;
+}

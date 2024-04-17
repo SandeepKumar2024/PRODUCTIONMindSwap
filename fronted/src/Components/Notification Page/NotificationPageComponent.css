@@ -1,0 +1,100 @@
+.notificationPageContainer {
+  border: 1px solid #5d68f8;
+  max-width: 60vw;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.notificationPageContainer .pageName {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+.notificationPageContainer .pageName h1 {
+  text-align: center;
+  border-bottom: 2px solid #5d68f8;
+  color: #5d68f8;
+}
+.notificationPageContainer .allNotifications {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 0.4fr 5fr 0.2fr;
+    grid-template-rows: 1fr;
+    background-color: #e5e5eb;
+    padding: 10px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-radius: 10px;
+}
+.dark-mode .notificationPageContainer .allNotifications {
+  background-color: #bbb;
+}
+.notificationPageContainer .allNotifications:hover {
+  background-color: #ebebfb;
+}
+.dark-mode .notificationPageContainer .allNotifications:hover {
+  background-color: #aaa;
+}
+
+.notificationPageContainer .allNotifications .sourceProfile {
+  border: 3px solid #8c94f7;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  user-select: none;
+}
+.dark-mode .notificationPageContainer .allNotifications .sourceProfile {
+  border: 3px solid white;
+}
+.notificationPageContainer .allNotifications .sourceProfile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}.notificationPageContainer .allNotifications .contentContainer {
+    overflow: hidden;
+    height: auto;
+    word-wrap: break-word;
+}
+.dark-mode .notificationPageContainer .allNotifications .contentContainer {
+  color: black;
+}
+.notificationPageContainer .allNotifications .contentContainer .content{
+  text-align: justify;
+}
+.notificationPageContainer .allNotifications .contentContainer .content .name {
+  font-weight: bold;
+}
+.notificationPageContainer
+  .allNotifications
+  .contentContainer
+  #notificationTime
+  .time {
+  font-size: 0.7rem;
+}
+.notificationPageContainer .allNotifications #deleteNotification {
+  cursor: pointer;
+  border-radius: 50%;
+  height: 1rem;
+  margin: auto;
+}
+.notificationPageContainer
+  .allNotifications
+  #deleteNotification
+  .svg-inline--fa {
+  height: 0.8rem;
+}
+.notificationPageContainer
+  .allNotifications
+  #deleteNotification
+  .svg-inline--fa:hover {
+  color: red;
+}

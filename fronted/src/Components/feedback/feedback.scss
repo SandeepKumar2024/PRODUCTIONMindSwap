@@ -1,0 +1,81 @@
+.feedback {
+    max-width: fit-content;
+    max-height: fit-content;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #7784F8;
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgb(227, 224, 224);
+    z-index: 2;
+    
+    #close-feedback {
+        background-color: white;
+        color: #7784F8;
+        max-height: fit-content;
+        position: relative;
+        left: 95%;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        width: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        label {
+            font-size: 1.5rem;
+        }
+
+        textarea {
+            border: 1px solid gray;
+            padding: 10px;
+            outline: none;
+            height: 10rem;
+            border-radius: 10px;
+            resize: none;
+            width:30rem;
+        }
+
+        button {
+            width: 90px;
+            padding: 10px;
+            margin: auto;
+            color: rgb(255, 254, 254);
+            background-color: rgb(30, 221, 122);
+            outline: none;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+
+            &:hover{
+                background-color: rgb(21, 186, 21);
+            }
+        }
+
+    }
+
+}

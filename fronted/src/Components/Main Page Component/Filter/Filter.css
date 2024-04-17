@@ -1,0 +1,77 @@
+#filter-section {
+  border-top: 1px solid rgba(112, 112, 112, 0.36);
+  border-bottom: 1px solid rgba(112, 112, 112, 0.36);
+  /* padding: 0rem 8rem; */
+}
+
+#filter-section ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2.19rem;
+  list-style: none;
+  padding: 0 !important;
+  /* border: 1px solid red; */
+  margin: auto;
+  max-width: fit-content;
+  align-items: center;
+}
+
+#filter-section ul li {
+  user-select: none;
+  padding: 12.8px 0px 8.8px 0px !important;
+  border-bottom: 4px solid transparent;
+  transition: border 0.3s linear;
+  /* border-radius: 5px; */
+}
+#filter-section ul li:hover{
+  border-bottom-color: #5d68f8;
+}
+
+#filter-section ul li .active{
+  color: #5d68f8;
+  border-bottom-color: #5d68f8;
+}
+#filter-section ul li span {
+  font-size: 12pt;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.mainContainer {
+  width: 91.5vw;
+  padding: 1.5rem;
+  margin-left: 4rem;
+  box-shadow: 0px 0px 10px rgb(185, 185, 245);
+  position: absolute;
+  z-index: 3;
+ border-radius: 15px;
+  background: white;
+}
+.dark-mode .mainContainer{
+background-color: #111;
+}
+.mainContainer h1 {
+  padding: 1rem 0rem;
+  font-weight: 700;
+}
+.mainContainer .subjectBusket {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.2rem;
+}
+.mainContainer .subjectBusket h2 {
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+}
+.mainContainer .subjectBusket .points {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 400;
+  max-width: fit-content;
+  padding: 10px 0px;
+}
+.mainContainer .subjectBusket .points:hover {
+  /* background-color: #5d68f8; */
+  font-weight: bolder;
+}

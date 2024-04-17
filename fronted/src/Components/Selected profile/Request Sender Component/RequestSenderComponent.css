@@ -1,0 +1,114 @@
+.doubts {
+    position: absolute;
+    max-width: fit-content;
+    max-height: fit-content;
+    opacity: 0;
+    scale: 0;
+    background: #8C94F7;
+    border-radius: 1rem;
+    bottom: -32%;
+    right: 3.5%;
+    transform: translate(-50%, -50%);
+}
+
+.show-doubts {
+    opacity: 1;
+    scale: 1;
+}
+
+.doubt-container .close {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    color: white;
+}
+
+.doubt-container .close:hover {
+    background-color: white;
+    color: red;
+
+}
+
+.doubt-container .close span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.doubt-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 1rem;
+    gap: 1rem;
+}
+
+.doubt-content h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.doubt-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.doubt-content form textarea {
+    outline: none;
+    border: 1px solid gray;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+.doubt-content form textarea::placeholder {
+  opacity: 0.5;
+}
+
+.doubt-content form input {
+    padding-left: 0.3rem;
+}
+
+.doubt-content form button {
+    width: 7rem;
+    border-radius: 2rem;
+    padding: 0.5rem;
+    border: none;
+    margin: auto;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.doubt-content form button:hover {
+    background-color: rgb(209, 209, 222);
+}
+.doubts .doubtIndicator {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #8C94F7;
+    position: absolute;
+    bottom: -8px;
+    right: 23%;
+}
+
+.dark-mode.doubts .doubtIndicator {
+    border-bottom: 10px solid #fff;
+
+}

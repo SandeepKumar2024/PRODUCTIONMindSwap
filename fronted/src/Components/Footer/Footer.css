@@ -1,0 +1,304 @@
+.h-secondary {
+  text-align: justify;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+.h-key-point {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+#footer {
+  background-color: #8c94f7;
+}
+
+.dark-mode #footer{
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-image: linear-gradient(to bottom, #333, #222);
+}
+#footer #footer-box {
+  height: inherit;
+}
+
+#footer #footer-box .icons {
+  padding: 2rem 0rem;
+  max-width: 45rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer #footer-box .icons a {
+  border-radius: 50%;
+}
+#footer #footer-box .icons .icon-box {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #535cad;
+  cursor: pointer;
+}
+.dark-mode #footer #footer-box .icons .icon-box{
+  background-color: #fff;
+}
+#footer #footer-box .icons .icon-box img {
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0.8rem 0rem 0rem 0.8rem;
+  filter: invert(1);
+}
+.dark-mode #footer #footer-box .icons .icon-box img {
+  filter: invert(0);
+
+}
+
+#footer #footer-box .newsletter form {
+  padding: 1rem 0rem;
+  display: flex;
+  max-width: 100vw;
+  margin: 0rem 4rem;
+  justify-content: space-between;
+}
+
+#footer #footer-box .newsletter form label {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+#footer #footer-box .newsletter form input {
+  padding-left: 10px;
+  min-width: 45vw;
+  height: 2.8rem;
+  background-color: #8c94f7;
+  border: 2px solid white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+.dark-mode #footer #footer-box .newsletter form input{
+  background-color: #bbb;
+}
+input::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+.dark-mode input::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+#footer #footer-box .newsletter form button {
+  padding: 0rem 1rem;
+  margin-left: 2rem;
+  background-color: #8c94f7;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.dark-mode #footer #footer-box .newsletter form button {
+  background-color: #bbb;
+  color: black;
+}
+#footer #footer-box .contact-us{
+  margin: 0rem 4rem;
+}
+#footer #footer-box .contact-us .h-key-point {
+  color: white;
+  font-weight: bold;
+}
+
+#footer #footer-box .contact-us .h-secondary {
+  padding: 0rem 0rem 1rem 0rem;
+  color: white;
+}
+
+#footer #footer-box .contact-us .h-secondary a {
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+#footer #footer-box .contact-us .h-secondary span {
+  border-bottom: 2px solid white;
+}
+
+#footer #footer-box .quick-links {
+  max-width: 100vw;
+  color: white;
+  margin: 0rem 4rem;
+  padding-bottom: 1rem;
+}
+
+#footer #footer-box .quick-links .h-key-point {
+  /* for heading only */
+  text-align: left;
+  color: white;
+}
+
+#footer #footer-box .quick-links ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+ul[type="circle"] {
+  list-style-type: none;
+}
+
+ul[type="circle"] li::before {
+  content: "\25CF";
+  color: #535db7;
+  padding: 1rem;
+}
+.dark-mode ul[type="circle"] li::before {
+  color: #bbb;
+}
+
+#footer #footer-box .quick-links ul li {
+  padding: 1rem;
+}
+
+#footer #footer-box .quick-links ul li a {
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+#footer #footer-box .quick-links ul li a:hover {
+  border-bottom: 2px solid white;
+}
+#footer #footer-box #attributions{
+  padding: 1rem 4rem;
+  color: white;
+}
+#footer #footer-box #attributions p{
+  padding:  10px;
+  font-size: 12px;
+}
+.copyright {
+  background-color: black !important;
+  color: white;
+  padding: 5px 0px;
+}
+.copyright p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: normal;
+  margin: 5px 0px;
+}
+/* --------------------Responsive CSS ------------------- */
+/* ---- Extra Small Device ------ */
+@media only screen and (max-width: 768px) {
+  .h-secondary {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #footer #footer-box .newsletter form {
+    flex-direction: column;
+    justify-content: normal;
+    gap: 1rem;
+    padding-bottom: 2rem;
+
+  }
+  #footer #footer-box .newsletter form label {
+    text-align: center;
+  }
+  #footer #footer-box .newsletter form button {
+    padding: 0.5rem 1rem;
+    margin-left: 0;
+    font-size: 1.1rem;
+    max-width: 155px;
+   margin: auto;
+  }
+  #footer #footer-box .quick-links ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #footer #footer-box .quick-links ul li a {
+    font-size: 1.05rem;
+  }
+  .copyright p {
+    font-size: 1rem;
+  }
+}
+
+/* ---- Medium Device ------ */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .h-secondary {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #footer #footer-box .newsletter form {
+    flex-direction: row;
+    justify-content: normal;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    align-items: center;
+
+  }
+  #footer #footer-box .newsletter form label {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #footer #footer-box .newsletter form button {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    height: 2.8rem;
+  }
+  #footer #footer-box .quick-links ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #footer #footer-box .quick-links ul li a {
+    font-size: 1.05rem;
+  }
+  .copyright p {
+    font-size: 1rem;
+  }
+}
+
+/* ---- Large Device ------ */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  .h-secondary {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  #footer #footer-box .newsletter form {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+    align-items: center;
+
+  }
+  #footer #footer-box .newsletter form label {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  #footer #footer-box .newsletter form button {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    height: 2.8rem;
+  }
+  #footer #footer-box .quick-links ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  #footer #footer-box .quick-links ul li a {
+    font-size: 1.05rem;
+  }
+  .copyright p {
+    font-size: 1rem;
+  }
+}
+
+/* ----Extra Large Device ------ */
+/* @media only screen and (min-width: 1201px) and (max-width: 1533px) {
+  
+} */
+
+/* ----Extra Extra Large Device ------ */
+/* @media only screen and (min-width: 2041px) {
+  
+} */

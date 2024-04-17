@@ -1,0 +1,126 @@
+.profileCard {
+    border: 2px solid #dcdcdc;
+    width: 15rem;
+    height: 17rem;
+    border-radius: inherit;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease;
+
+}
+
+.profileCard:hover {
+    transform: scale(1.05);
+
+}
+
+.profileCard .pofileCard-graphics {
+    max-width: 100%;
+    height: 55%;
+    border-radius: inherit;
+    position: relative;
+
+}
+
+.profileCard .pofileCard-graphics img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+    position: relative;
+
+}
+
+.profileCard .pofileCard-graphics .profileCardImage {
+    width: 4rem;
+    display: block;
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.profileCard .pofileCard-graphics .profileCardImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7574ff;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.profileCard .pofileCard-graphics .profileCardImage .profileOnline-dot {
+    background: rgb(2, 249, 2);
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
+
+}
+
+.profileCard .pofileCard-graphics .profileCardImage .profileOffline-dot {
+    background: gray;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    position: absolute;
+    right: 3%;
+    bottom: 2%;
+
+}
+
+.profileCard .profileCardDetails {
+    height: 45%;
+}
+
+.profileCard .profileCardDetails .user-name {
+    height: 27px;
+    font-size: 13px;
+    padding: 5px 10px;
+
+}
+
+/* .profileCard .profileCardDetails .user-headline {
+        font-size: 13px;
+        padding: 5px 10px;
+        height: 74px;
+        overflow: hidden;
+        word-wrap: break-word;
+        word-break: break-word;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    } */
+
+.profileCard .profileCardDetails .user-headline {
+    font-size: 13px;
+    padding: 5px 10px;
+    height: 74px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Adjust the number of lines you want to display */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.profileCard .profileCardDetails .f-s {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 10px 10px;
+
+
+}
+
+#star {
+    color: rgb(255, 208, 0);
+    font-weight: bolder;
+    font-size: 1.1rem;
+}

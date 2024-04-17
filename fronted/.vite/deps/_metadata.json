@@ -1,0 +1,233 @@
+{
+<<<<<<< HEAD:Client/node_modules/.vite/deps/_metadata.json
+  "hash": "9273a9d6",
+  "browserHash": "9ca87c51",
+  "optimized": {
+    "@fortawesome/react-fontawesome": {
+      "src": "../../@fortawesome/react-fontawesome/index.es.js",
+      "file": "@fortawesome_react-fontawesome.js",
+      "fileHash": "e834e48b",
+      "needsInterop": false
+    },
+    "react": {
+      "src": "../../react/index.js",
+      "file": "react.js",
+      "fileHash": "1b8c7560",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "0a39adb3",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "cdec60fc",
+      "needsInterop": true
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "c37bb808",
+      "needsInterop": false
+    },
+    "@reduxjs/toolkit": {
+      "src": "../../@reduxjs/toolkit/dist/redux-toolkit.modern.mjs",
+      "file": "@reduxjs_toolkit.js",
+      "fileHash": "d66bfde0",
+      "needsInterop": false
+    },
+    "axios": {
+      "src": "../../axios/index.js",
+      "file": "axios.js",
+      "fileHash": "9a6948e9",
+      "needsInterop": false
+    },
+    "chart.js/auto": {
+      "src": "../../chart.js/auto/auto.js",
+      "file": "chart__js_auto.js",
+      "fileHash": "77e29ce0",
+      "needsInterop": false
+    },
+    "peerjs": {
+      "src": "../../peerjs/dist/bundler.mjs",
+      "file": "peerjs.js",
+      "fileHash": "71912840",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b52fcfd0",
+      "needsInterop": true
+    },
+    "react-input-emoji": {
+      "src": "../../react-input-emoji/dist/index.es.js",
+      "file": "react-input-emoji.js",
+      "fileHash": "ba6d026e",
+      "needsInterop": false
+    },
+    "react-konva": {
+      "src": "../../react-konva/es/ReactKonva.js",
+      "file": "react-konva.js",
+      "fileHash": "4383e3c7",
+      "needsInterop": false
+    },
+    "react-redux": {
+      "src": "../../react-redux/dist/react-redux.mjs",
+      "file": "react-redux.js",
+      "fileHash": "d5696add",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "b3930109",
+      "needsInterop": false
+    },
+    "react-toastify": {
+      "src": "../../react-toastify/dist/react-toastify.esm.mjs",
+      "file": "react-toastify.js",
+      "fileHash": "45f9a0e6",
+      "needsInterop": false
+    },
+    "socket.io-client": {
+      "src": "../../socket.io-client/build/esm/index.js",
+      "file": "socket__io-client.js",
+      "fileHash": "94b2d01c",
+      "needsInterop": false
+    },
+    "swiper/modules": {
+      "src": "../../swiper/modules/index.mjs",
+      "file": "swiper_modules.js",
+      "fileHash": "fb6eb719",
+      "needsInterop": false
+    },
+    "swiper/react": {
+      "src": "../../swiper/swiper-react.mjs",
+      "file": "swiper_react.js",
+      "fileHash": "afd86a4f",
+      "needsInterop": false
+    },
+    "timeago.js": {
+      "src": "../../timeago.js/esm/index.js",
+      "file": "timeago__js.js",
+      "fileHash": "cac182b2",
+=======
+  "hash": "e1f68b0d",
+  "browserHash": "762c5199",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "402634c3",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "ae360818",
+      "needsInterop": true
+    },
+    "axios": {
+      "src": "../../node_modules/axios/index.js",
+      "file": "axios.js",
+      "fileHash": "4abc2731",
+      "needsInterop": false
+    },
+    "react-redux": {
+      "src": "../../node_modules/react-redux/dist/react-redux.mjs",
+      "file": "react-redux.js",
+      "fileHash": "ce32e667",
+      "needsInterop": false
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "61280fd6",
+      "needsInterop": false
+    },
+    "@reduxjs/toolkit": {
+      "src": "../../node_modules/@reduxjs/toolkit/dist/redux-toolkit.modern.mjs",
+      "file": "@reduxjs_toolkit.js",
+      "fileHash": "1484496e",
+      "needsInterop": false
+    },
+    "socket.io-client": {
+      "src": "../../node_modules/socket.io-client/build/esm/index.js",
+      "file": "socket__io-client.js",
+      "fileHash": "885cd00c",
+      "needsInterop": false
+    },
+    "@fortawesome/react-fontawesome": {
+      "src": "../../node_modules/@fortawesome/react-fontawesome/index.es.js",
+      "file": "@fortawesome_react-fontawesome.js",
+      "fileHash": "c6b36720",
+      "needsInterop": false
+    },
+    "@fortawesome/free-solid-svg-icons": {
+      "src": "../../node_modules/@fortawesome/free-solid-svg-icons/index.mjs",
+      "file": "@fortawesome_free-solid-svg-icons.js",
+      "fileHash": "5325457c",
+      "needsInterop": false
+    },
+    "timeago.js": {
+      "src": "../../node_modules/timeago.js/esm/index.js",
+      "file": "timeago__js.js",
+      "fileHash": "3e77ab00",
+      "needsInterop": false
+    },
+    "react-input-emoji": {
+      "src": "../../node_modules/react-input-emoji/dist/index.es.js",
+      "file": "react-input-emoji.js",
+      "fileHash": "cf2125a4",
+      "needsInterop": false
+    },
+    "swiper/react": {
+      "src": "../../node_modules/swiper/swiper-react.mjs",
+      "file": "swiper_react.js",
+      "fileHash": "90797173",
+      "needsInterop": false
+    },
+    "swiper/modules": {
+      "src": "../../node_modules/swiper/modules/index.mjs",
+      "file": "swiper_modules.js",
+      "fileHash": "572ec498",
+>>>>>>> 7cbda6d7887daeb62b63ddf27f62fc757edc4dff:Client/.vite/deps/_metadata.json
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+<<<<<<< HEAD:Client/node_modules/.vite/deps/_metadata.json
+    "chunk-SX4J324Y": {
+      "file": "chunk-SX4J324Y.js"
+    },
+    "chunk-HJT4S7B2": {
+      "file": "chunk-HJT4S7B2.js"
+    },
+    "chunk-T5VS5SRF": {
+      "file": "chunk-T5VS5SRF.js"
+    },
+    "chunk-4FXYAZTG": {
+      "file": "chunk-4FXYAZTG.js"
+    },
+    "chunk-PQS2SGCL": {
+      "file": "chunk-PQS2SGCL.js"
+=======
+    "chunk-ZCA6YR3N": {
+      "file": "chunk-ZCA6YR3N.js"
+    },
+    "chunk-63TMRDQ4": {
+      "file": "chunk-63TMRDQ4.js"
+    },
+    "chunk-54Q2DZCK": {
+      "file": "chunk-54Q2DZCK.js"
+    },
+    "chunk-USJHI7ER": {
+      "file": "chunk-USJHI7ER.js"
+>>>>>>> 7cbda6d7887daeb62b63ddf27f62fc757edc4dff:Client/.vite/deps/_metadata.json
+    }
+  }
+}

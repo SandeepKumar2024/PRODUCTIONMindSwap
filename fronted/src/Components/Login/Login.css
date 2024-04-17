@@ -1,0 +1,255 @@
+.overlay {
+    width: 100%;
+    backdrop-filter: blur(5px);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    opacity: 1;
+}
+
+.popup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0);
+    min-width: 60vw;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 2.8rem;
+    z-index: 1;
+    user-select: none;
+}
+
+.show-popup {
+    transition-duration: 50s;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}
+
+.popup .salutation {
+    border-radius: 2.8rem 0rem 0rem 2.8rem;
+    background-color: #7784F8;
+}
+
+.popup .salutation .info-1 {
+    text-align: justify;
+    font-size: 1.6rem;
+    color: white;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.popup .salutation .info-2 {
+    font-size: 1rem;
+    text-align: justify;
+    color: white;
+    max-width: 17rem;
+    margin: 5rem 1rem 0rem 11rem;
+}
+
+.popup .salutation .stars {
+    max-width: 7rem;
+    margin-left: 11rem;
+    margin-top: 0.5rem;
+}
+
+.popup .salutation .stars ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+.popup .salutation .stars ul li {
+    list-style: none;
+}
+
+.popup .salutation .stars ul li img {
+    width: 15px;
+}
+
+.popup .salutation .picture {
+    height: 17rem;
+    position: absolute;
+    top: 20.5rem;
+    left: -1.9rem;
+}
+
+.popup .form {
+    border-radius: 0rem 2.8rem 2.8rem 0rem;
+    background-color: #F0F1FC;
+}
+
+.popup .form .close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color: #7784F8;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white ;
+}
+.popup .form .close-btn:hover {
+color: red;
+background-color: white;
+border: 1px solid red;
+}
+.popup .form .login-logo {
+    max-width: fit-content;
+    margin: 1rem auto;
+
+}
+
+.popup .form .login-logo img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(213, 213, 213);
+}
+
+.popup .form h1 {
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    font-size: 1.8rem;
+    padding-top: 0px;
+}
+
+.popup .form p {
+    text-align: center;
+    color: #929292;
+    /* margin: 0rem 10rem; */
+    font-size: 1rem;
+}
+
+.popup .form .form-element #email {
+    display: block;
+    width: 22.8rem;
+    height: 2rem;
+    margin: 2rem auto 1rem auto;
+    padding: 1.2rem;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    caret-color: #2638df;
+}
+
+.popup .form .form-element input[type="email"]::placeholder {
+    color: black;
+}
+
+.popup .form .form-element #password {
+    display: block;
+    width: 22.8rem;
+    height: 2rem;
+    margin: 1rem auto;
+    padding: 1.2rem;
+    padding-right: 2rem;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    caret-color: #2638df;
+}
+
+.popup .form .form-element input[type="password"]::placeholder {
+    color: black;
+}
+
+.popup .form .form-element #password-visible {
+    position: relative;
+    max-width:0rem;
+    max-height: 0rem;
+    top: -3rem;
+    left: 24rem;
+}
+
+.popup .form .form-element #password-visible  img {
+    scale: 0.8;
+    cursor: pointer;
+}
+
+.popup .form .memory {
+    display: flex;
+    justify-content: end;
+    width: 22.5rem;
+    margin: auto;
+}
+
+.popup .form .memory .remember input {
+    position: relative;
+    top: 0.2rem;
+}
+
+.popup .form .memory .remember span {
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.popup .form .memory .forgot p {
+    font-size: 0.8rem;
+    color: #1a79ca;
+    cursor: pointer;
+}
+
+.popup .form .form-element button {
+    width: 22rem;
+    display: block;
+    margin: 1rem auto;
+    padding: 0.7rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background-color: #766ee2;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.popup .form .form-element .cwg {
+    text-decoration: none;
+    user-select: none;
+}
+
+.popup .form .form-element .continue-with-google {
+    width: 22rem;
+    margin: auto;
+    padding: 0.5rem;
+    border: 2px solid gray;
+    background-color: transparent;
+    border-radius: 0.7rem;
+}
+
+.popup .form .form-element .continue-with-google img {
+    position: relative;
+    top: 0.2rem;
+    width: 1.3rem;
+}
+
+.popup .form .form-element .continue-with-google span {
+    font-size: 1.1rem;
+    color: gray;
+    padding-left: 10px;
+}
+
+.popup .form #create-account-in-popup {
+    width: 22rem;
+    margin: 1rem auto;
+}
+
+.popup .form #create-account-in-popup p {
+    font-size: 0.85rem;
+    color: #929292;
+}
+
+.popup .form #create-account-in-popup p span {
+    cursor: pointer;
+    color: #7784F8;
+}

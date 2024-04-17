@@ -1,0 +1,253 @@
+#update-profile-container {
+  padding: 2rem;
+  background-color: white;
+  border: 2px solid blue;
+  max-width: 70%;
+  border-radius: 2rem;
+  margin: 4rem auto;
+  box-shadow: 0px 0px 5px 3px rgba(255, 255, 255, 0.55);
+}
+
+.dark-mode #update-profile-container {
+  background-color: #222;
+}
+
+#update-profile-container h1 {
+  font-size: 2rem;
+  color: #8c94f7;
+  font-weight: bolder;
+}
+
+.dark-mode #update-profile-container h1 {
+  color: #fff;
+}
+
+#update-profile-container h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 3rem;
+  color: #8c94f7;
+}
+
+#update-profile-container .note {
+  color: red;
+  text-align: center;
+}
+
+.dark-mode #update-profile-container h5 {
+  color: #fff;
+}
+
+#update-profile-container #profile-pic {
+  width: 6rem;
+  height: 6rem;
+  margin: 0.5rem 0rem;
+  position: relative;
+}
+
+#update-profile-container #profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #7574ff;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#update-profile-container #profile-pic button {
+  max-height: fit-content;
+  padding: 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #8c94f7;
+  color: white;
+  font-weight: bold;
+  border: transparent;
+  cursor: pointer;
+  margin: 2rem 0rem 0rem 8rem;
+}
+
+.dark-mode #update-profile-container #profile-pic button {
+  background-color: #fff;
+  color: #111;
+}
+
+#update-profile-container #profile-pic button:hover {
+  background-color: #9ca3fd;
+}
+
+.dark-mode #update-profile-container #profile-pic button:hover {
+  background-color: #ddd;
+}
+
+#update-profile-container form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+
+#update-profile-container form .data {
+  display: flex;
+  flex-direction: column;
+}
+
+#update-profile-container form .dataCentered {
+  align-items: center;
+  justify-content: center;
+}
+#update-profile-container form .dataCentered p{
+  color: red;
+  font-weight: 500;
+}
+
+#update-profile-container form .respondent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#update-profile-container form .respondent #respondent {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+#update-profile-container form label {
+  font-size: 12pt;
+  color: #8c94f7;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.dark-mode #update-profile-container form label {
+  color: #fff;
+}
+
+#update-profile-container form input,
+#update-profile-container form select,
+#update-profile-container form textarea {
+  padding: 10px;
+  outline: none;
+  border: 2px solid #7979ff;
+  border-radius: 8px;
+  resize: none;
+}
+
+#update-profile-container form input::placeholder,
+#update-profile-container form textarea::placeholder {
+  color: gray;
+  opacity: 0.8;
+  font-size: 10pt;
+}
+
+#update-profile-container form .buttons {
+  display: flex;
+}
+
+#update-profile-container form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6d76ef;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: white;
+  font-weight: bolder;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+  max-height: fit-content;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.dark-mode #update-profile-container form button {
+  background-color: #fff;
+  color: #111;
+}
+
+#update-profile-container form button span {
+  font-family: math;
+  padding: 1px 0 0 7px;
+}
+
+#update-profile-container form #reset:hover {
+  background-color: red;
+}
+
+#update-profile-container form #submit:hover {
+  background-color: green;
+}
+
+/* Popuop design for profile pic upload starts */
+.upload-overlay {
+  width: 100%;
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+}
+
+.show-upload-overlay {
+  opacity: 1;
+  z-index: 1;
+}
+
+.upload-popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0);
+  max-width: fit-content;
+  max-height: fit-content;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  z-index: 2;
+  transition-duration: 0.1s;
+  user-select: none;
+  background: #5d68f8;
+  padding: 12px;
+  border: none;
+}
+
+.dark-mode .upload-popup {
+  background-color: #333;
+  border: 2px solid #fff;
+}
+
+.show-upload-popup {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+.upload-popup input {
+  cursor: pointer;
+  color: white;
+}
+
+.upload-popup button {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 11px;
+  font-weight: bold;
+}

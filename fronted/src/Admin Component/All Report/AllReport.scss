@@ -1,0 +1,185 @@
+#AR-container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    height: 99vh;
+
+    #AR-left {
+        width: fit-content;
+        border-right: 2px solid gainsboro;
+        height: 66%;
+        padding: 10px;
+
+
+        h3 {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #AR-left-box {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            // border: 2px solid green;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            height: 95%;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+
+            .AR-problem-card {
+                user-select: none;
+                width: 16rem;
+                height: 21rem;
+                display: flex;
+                cursor: pointer;
+                padding: 1.2rem 0.3rem 0.4rem 0.5rem;
+                align-items: center;
+                justify-content: flex-start;
+                flex-direction: column;
+                border-radius: 30px;
+                background-color: rgb(227, 242, 255);
+                position: relative;
+
+                .selectedDiv {
+
+                    position: absolute;
+                    right: 10px;
+                    top: 10px;
+                    width: 89%;
+                    height: fit-content;
+                    display: flex;
+                    justify-content: space-between;
+
+
+                    #selected {
+                        color: green;
+                    }
+                }
+
+                .AR-img {
+                    width: 5rem;
+                    height: 5rem;
+                    border-radius: 50%;
+                    border: 1px solid #c2bdbd;
+                    user-select: none;
+
+
+                    img {
+                        width: inherit;
+                        height: inherit;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        user-select: none;
+                    }
+
+                }
+
+                .AR-name {
+                    h2 {
+                        padding: 0.5rem;
+                        font-size: 1.1rem;
+                        font-weight: bold;
+                    }
+                }
+
+                .AR-currentPosition {
+                    h3 {
+                        color: black;
+                        font-size: 1rem;
+                        border-bottom: 2px solid #7880da;
+                        width: 10rem;
+                        text-align: center;
+                        padding-bottom: 0.5rem;
+                    }
+                }
+
+                .AR-headline {
+                    // border: 1px solid red;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 18px;
+                    padding: 0.5rem;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+
+                    &::-webkit-scrollbar {
+                        width: 0; // This will hide the scrollbar
+                    }
+
+                    p {
+                        text-align: justify;
+                        font-size: 13px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    #AR-right {
+        height: 66%;
+        padding: 10px;
+
+        h3 {
+            padding: 10px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #AR-right-box {
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            gap: 18px;
+            height: 39rem;
+
+            &::-webkit-scrollbar {
+                width: 5px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: blue;
+                /* Change this to the color you desire */
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: black;
+                /* Change this to the color you desire for the thumb */
+                border-radius: 10px;
+                /* Optional: Adjust the border radius if needed */
+            }
+
+            #AR-abuse-card {
+                background-color: rgb(227, 242, 255);
+                border-radius: 10px;
+
+                .first,
+                .second,
+                .third,
+                .fourth {
+                    padding: 10px;
+                    display: grid;
+                    grid-template-columns: 0.1fr 1fr;
+                    gap: 5px;
+
+                    #message {
+                        text-align: justify;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
+                        height: 10rem;
+                        line-height: 20px;
+
+                        &::-webkit-scrollbar {
+                            width: 0;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

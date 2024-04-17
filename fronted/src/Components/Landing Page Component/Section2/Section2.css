@@ -1,0 +1,98 @@
+/* ----------------Section second Strats here------------------- */
+#second {
+  background: #e5e7ff;
+  padding-bottom: 2rem;
+}
+
+#second #second-box h1 {
+  color: #1e2269;
+  padding: 2rem 0rem 0.5rem 0rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#second #second-box #users {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.wrapper .icon img {
+  height: 1.5rem;
+  width: 1rem;
+  filter: invert(1);
+}
+
+.carousel {
+  width: 90vw;
+  margin: 0 4rem;
+}
+
+.autoplay-progress {
+  visibility: hidden;
+}
+
+
+.carousel .card {
+
+  width: 18rem;
+  height: 20rem;
+  display: flex;
+  cursor: pointer;
+  padding: 1.2rem 0.3rem 0.4rem 0.5rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+}
+
+.card .img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid #c2bdbd;
+  user-select: none;
+}
+
+.card .img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.card .name h2 {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.card .country h3 {
+  color: black;
+  font-size: 1rem;
+  border-bottom: 2px solid #7880da;
+  width: 10rem;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.card .about {
+  min-width: 20rem;
+  max-height: 15rem;
+  padding: 0.5rem;
+  overflow: hidden;
+}
+
+.card .about p {
+  padding: 1rem;
+  text-align: justify;
+  font-size: 1rem;
+  max-height: 14rem;
+  margin: 0px 10px;
+}
+
+/* ----------------Section second ends here------------------- */

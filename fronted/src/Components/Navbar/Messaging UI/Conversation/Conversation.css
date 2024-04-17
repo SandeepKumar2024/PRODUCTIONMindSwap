@@ -1,0 +1,40 @@
+.conversation {
+    border-radius: 0.5rem;
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.conversation:hover {
+    background: #eee;
+    color: black;
+}
+
+.conversation .pp {
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+}
+
+.conversation .pp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #7574ff;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.conversation .pp-name{
+   font-size: 13px;
+   display: flex;
+   flex-direction: column;
+   font-weight: bold;
+}
+.conversation .pp-name .status{
+   font-size: 10px;
+}

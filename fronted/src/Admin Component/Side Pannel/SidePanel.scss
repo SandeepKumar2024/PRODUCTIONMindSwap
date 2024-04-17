@@ -1,0 +1,88 @@
+#adminDashboard {
+    border-top: 2px solid rgb(221, 216, 216);
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+
+    #dashboard-left {
+        #AdminPanelLogo {
+            user-select: none;
+            color: #5d68f8;
+            padding: 1rem 0 0.5rem 1rem;
+            width: fit-content;
+
+            h1 {
+                cursor: pointer;
+            }
+        }
+
+        #SP-container {
+            user-select: none;
+            height: 91vh;
+            width: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            background-color: #7574ff;
+            border: 2px solid #7574ff;
+            padding: 10px 0;
+            color: white;
+
+            // border-radius: 10px;
+            .active {
+                background-color: whitesmoke;
+                color: black;
+            }
+
+            #adminProfile {
+                width: 4rem;
+                height: 4rem;
+                display: block;
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid #7574ff;
+                    background-color: white;
+                }
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                #home,
+                #feedback,
+                #notifications,
+                #reports,
+                #analytics,
+                #logout {
+                    width: 100%;
+                    // border: 2px solid green;
+                    padding: 15px 65px 15px 15px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: whitesmoke;
+                        color: black;
+                    }
+
+                    p {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    #dashboard-right {
+        // background-color: rgb(240, 198, 198);
+
+    }
+
+}

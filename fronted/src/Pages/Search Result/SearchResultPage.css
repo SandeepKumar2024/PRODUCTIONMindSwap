@@ -1,0 +1,22 @@
+#sf {
+    margin-left: 4rem;
+    margin-top: 3rem;
+    font-weight: normal;
+}
+
+#allSearchResult {
+    display: grid;
+    gap: 3.3rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: fit-content;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#not-found{
+    margin: 4rem;
+    font-weight: normal;
+}
+#not-found span{
+    font-weight: bold;
+}
