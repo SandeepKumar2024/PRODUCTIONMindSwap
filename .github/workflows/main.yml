@@ -53,7 +53,7 @@ jobs:
         run: |
           cd ../server
           npm install pm2 -g # Install PM2 globally if not already installed
-          pm2 restart server.js
+          pm2 restart index.js
 
       - name: Deploy to EC2
         run: |
