@@ -40,7 +40,7 @@ jobs:
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET_KEY: ${{ secrets.GOOGLE_CLIENT_SECRET_KEY }}
         run: |
-          cd ../server
+          cd /home/ubuntu/PRODUCTIONMindSwap/server
           echo "MONGO_URI=${MONGO_URI}" >> .env
           echo "JWT_KEY=${JWT_KEY}" >> .env
           echo "SEC_KEY=${SEC_KEY}" >> .env
@@ -51,7 +51,7 @@ jobs:
 
       - name: Start Node.js Server
         run: |
-          cd ../server
+          cd /home/ubuntu/PRODUCTIONMindSwap/server
           npm install pm2 -g # Install PM2 globally if not already installed
           pm2 restart index.js
 
