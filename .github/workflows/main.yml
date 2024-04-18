@@ -52,7 +52,7 @@ jobs:
       - name: Start Node.js Server
         run: |
           cd /home/ubuntu/PRODUCTIONMindSwap/server
-          sudo npm install pm2 -g # Install PM2 globally if not already installed
+          sudo npm install pm2 -g # Install PM2 globally if not already updated installed
           pm2 restart index.js
 
       - name: Deploy to EC2
