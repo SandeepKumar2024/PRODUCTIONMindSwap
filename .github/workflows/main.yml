@@ -1,0 +1,60 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '18' # Specify the Node.js version you want to use
+
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          cd fronted
+          npm install
+          cd ../server
+          npm install
+
+      - name: Build React App
+        run: |
+          cd client
+          npm run build
+
+      - name: Set up Environment Variables
+        env:
+          MONGO_URI: ${{ secrets.MONGO_URI }}
+          JWT_KEY: ${{ secrets.JWT_KEY }}
+          SEC_KEY: ${{ secrets.SEC_KEY }}
+          REACT_APP_URI: ${{ secrets.REACT_APP_URI }}
+          PORT: ${{ secrets.PORT }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET_KEY: ${{ secrets.GOOGLE_CLIENT_SECRET_KEY }}
+        run: |
+          cd ../server
+          echo "MONGO_URI=${MONGO_URI}" >> .env
+          echo "JWT_KEY=${JWT_KEY}" >> .env
+          echo "SEC_KEY=${SEC_KEY}" >> .env
+          echo "REACT_APP_URI=${REACT_APP_URI}" >> .env
+          echo "PORT=${PORT}" >> .env
+          echo "GOOGLE_CLIENT_ID=${GOOGLE_CLIENT_ID}" >> .env
+          echo "GOOGLE_CLIENT_SECRET_KEY=${GOOGLE_CLIENT_SECRET_KEY}" >> .env
+
+      - name: Start Node.js Server
+        run: |
+          cd ../server
+          npm install pm2 -g # Install PM2 globally if not already installed
+          pm2 restart server.js
+
+      - name: Deploy to EC2
+        run: |
+          ssh -i ${{ secrets.SSH_PRIVATE_KEY }} ubuntu@ec2-3-109-165-0.ap-south-1.compute.amazonaws.com "cd /home/ubuntu/PRODUCTIONMindSwap && git pull origin main && ./svc.sh restart"
